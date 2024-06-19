@@ -1,0 +1,1 @@
+SELECT COVIDData.dateRep AS Date, cases as ConfirmedCases FROM COVIDData INNER JOIN Date ON COVIDData.dateRep = Date.dateRep WHERE countriesAndTerritories = 'United_Kingdom' ORDER BY year ASC, month ASC, day ASC;
